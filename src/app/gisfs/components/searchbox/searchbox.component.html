@@ -1,0 +1,11 @@
+<div>
+  <!-- el vento keyup.enter captura el valor del input al presionar enter -->
+   <!-- con el #txtTag creamos una referencia al input -->
+  <input
+    type="text"
+    class="form-control"
+    placeholder="Buscar gifs"
+    (keyup.enter)="searchTag()"
+    #txtTag
+  />
+</div>
