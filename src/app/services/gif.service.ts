@@ -13,8 +13,23 @@ export class GifsService {
   }
 
   public searchTag(tag: string): void {
-    //se agrega al inicio del array el tag
-    this._tagHistory.unshift(tag);
+    //si el tag es una cadena vacia no se guarda en el arreglo
+    if (tag.length === 0 ) {
+      return;
+    }
+    this.organaizedHistory(tag);
+  }
+
+  public organaizedHistory(tag: string): void {
+    if (!this.tagHistory.includes(tag)) {
+      this._tagHistory.unshift(tag);
+    }else{
+      this._tagHistory = this.tagHistory.filter((value)=> value !== tag);
+      this._tagHistory.unshift(tag);
+    }
+    if (this.tagHistory.length > 10) {
+      this._tagHistory.pop();
+    }
   }
 
 }
