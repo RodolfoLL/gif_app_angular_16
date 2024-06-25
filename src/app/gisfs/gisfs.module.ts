@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { SearchboxComponent } from './components/searchbox/searchbox.component';
 import { ListCardGifsComponent } from './components/list-card-gifs/list-card-gifs.component';
+import { GifcardComponent } from './components/gifcard/gifcard.component';
 
 
 
@@ -10,7 +11,8 @@ import { ListCardGifsComponent } from './components/list-card-gifs/list-card-gif
   declarations: [
     HomePageComponent,
     SearchboxComponent,
-    ListCardGifsComponent
+    ListCardGifsComponent,
+    GifcardComponent
   ],
   imports: [
     CommonModule
