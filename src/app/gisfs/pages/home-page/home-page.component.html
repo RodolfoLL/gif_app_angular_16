@@ -1,9 +1,12 @@
-<div class="container">
+<div class="container h-100">
   <h5>Buscar:</h5>
   <!-- componente searchbox -->
-  <gifs-searchbox></gifs-searchbox>
+  <div class="col-12">
+    <gifs-searchbox></gifs-searchbox>
+  </div>
 
   <!-- lista de gifs del componente list-card-gifs -->
-   <gifs-list-card-gifs></gifs-list-card-gifs>
-
+  <div class="col-12">
+    <gifs-list-card-gifs [gifs]="gifs"></gifs-list-card-gifs>
+  </div>
 </div>

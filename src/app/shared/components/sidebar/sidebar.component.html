@@ -2,9 +2,11 @@
   <h3 class="text-light">GifsApp</h3>
   <hr class="text-light" />
   <div class="list-group list-reset">
+    <!-- el evento (click) se activa al presionar el boton -->
     <button
       *ngFor="let tag of tagsHistory"
       class="list-group-item list-group-item-action"
+      (click)="searchTag(tag)"
     >
       {{ tag | titlecase}}
     </button>
