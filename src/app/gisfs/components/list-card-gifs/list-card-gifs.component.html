@@ -1,5 +1,5 @@
-<div class="row d-flex flex-wrap gap-1 w-100">
-  <div *ngFor="let gif of gifs" class=" col-md-3 col-sm-6">
+<div class=" d-flex flex-wrap gap-1" id="list-card">
+  <div *ngFor="let gif of gifs" >
     <gif-gifcard [gif]="gif"></gif-gifcard>
   </div>
 </div>

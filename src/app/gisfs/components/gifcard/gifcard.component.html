@@ -1,5 +1,6 @@
-<div class="card bg-dark text-light" style="width: 18rem;">
-  <img class="card-img-top" src={{gif.images.downsized.url}} alt="Card image cap">
+<div class="card bg-dark text-light " style="width: 18rem;" >
+  <shared-lazyimage [url]="gif.images.downsized_medium.url" [alt]="gif.title"></shared-lazyimage>
+  <!-- <img class="card-img-top" src={{gif.images.downsized.url}} alt="Card image cap"> -->
   <div class="card-body">
     <h6 class="card-title">{{gif.title}}</h6>
 
