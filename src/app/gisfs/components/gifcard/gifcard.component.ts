@@ -8,6 +8,9 @@ import { Gif } from '../../interfaces/gifs.interface';
 })
 export class GifcardComponent implements OnInit {
 
+  /**
+   * @gif propiedad que recibe informacion del list card gif
+   */
   @Input()
   public gif !:Gif;
 

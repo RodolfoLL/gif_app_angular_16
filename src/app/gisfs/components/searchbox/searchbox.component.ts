@@ -15,8 +15,10 @@ export class SearchboxComponent {
   // injectamos el servicio gifsService
   constructor(private gifsService: GifsService) { }
 
+  //*funcion que se ejecuta al presionar enter
   public searchTag(): void {
     const tag = this.txtTag.nativeElement.value;
+    // el tag se envia al servicio gifsService para que realice la peticion http
     this.gifsService.searchTag(tag);
     this.txtTag.nativeElement.value = '';
   }

@@ -1,4 +1,5 @@
 <div class="d-flex justify-content-center">
+  <!-- con ngstyle se controla el display de la imagen -->
   <img
     src="{{ url }}"
     alt="{{ alt }}"
@@ -6,5 +7,6 @@
     (load)="onLoad()"
     [ngStyle]="{ display: hasLoaded ? '' : 'none' }"
   />
+  <!--  esta imagen se mostrara cuando la imagen se este cargando -->
   <img *ngIf="!hasLoaded" src="assets/load.svg" alt="" height="35" width="35" />
 </div>
