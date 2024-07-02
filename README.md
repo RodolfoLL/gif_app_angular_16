@@ -1,27 +1,57 @@
-# GifsApp
+# Gifs App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
+GifsApp es una aplicacion web sencilla que utiliza la api [Giphy](https://giphy.com/) que te muestra los gifs segun a la busqueda que estes realizando.
 
-## Development server
+### Un vistazo a la aplicacion
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+![GifsApp image](/src/assets/gifApp.png)
 
-## Code scaffolding
+## Modulos y componentes de la aplicacion
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+La aplicacion fue construida utilizando Angular en su version 16.0.0 la cual maneja lo que es el concepto de modulos y componentes.
 
-## Build
+Los modulos que se encuentran en la aplicacion son los siguientes:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- appModule
+- sharedModule
+- homeModule
+- gifModule
 
-## Running unit tests
+Los componentes que se encuentran en la aplicacion son los siguientes:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- appComponent
+- searchboxComponent
+- sidebarComponent
+- gifcardComponent
+- listCardGifsComponent
+- lazyimageComponent
+- homepageComponent
 
-## Running end-to-end tests
+Una descripcion mas correcta que se puede encontrar con respecto a los modulos en angular es consultando a la documentacion de angular [Angular arquitecture modules](https://docs.angular.lat/guide/architecture-modules).
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+A continuación se muestran los modulos de la aplicacion:
 
-## Further help
+![GifsApp modules and components](/src/assets/gifAppModules.png)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+A continuacion se muestran los componentes de la aplicacion:
+
+![GifsApp components](/src/assets/gifAppComponents.png)
+
+## Como obtener la informacion de una API?
+
+Angular es un framework o plataforma muy completo, por lo que nos ofrece distintas herramientas para poder obtener informacion de una API.
+Angular fue desarrollado con el lenguaje de programacion javascript por lo tanto tambien podemos utilizar funciones de javascript para obtener la informacion de una API,angular maneja un principo que es la injeccion de dependencias.
+
+## Que es una injeccion de dependencias?
+
+Segun la documentacion de angular que se puede leer en este enlace [Angular arquitecture services](https://docs.angular.lat/guide/architecture-services) nos indica que un servicio es una categoría amplia que abarca cualquier valor, función o característica que necesite una aplicación. Un servicio es típicamente una clase con un propósito limitado y bien definido. Debe hacer algo específico y hacerlo bien.
+
+En la aplicacion GifsApp se hace uso de la injeccion de dependencias para poder obtener la informacion de la API Ghipy y tambien se aplican ciertas validaciones para que la informacion que se obtenga de la API sea correcta y tambien para que podamos tener toda la logica necesaria para tener persistencia de datos utilizando algun almacenamiento del navegador.
+
+## Como levantar la aplicacion
+Cabe recalcar que debe tener el angular cli en la version 16.0.0 puede instalarlo con el siguenites comando (npm install -g @angular/cli@16.0.0) esta version de angular utiliza la version node 18.0.0 no superior a 18.
+
+Para poder levantar la aplicacion solo debe seguir los siguientes pasos:
+- Realize una copia del proyecto utilizando el comando de (git clone ["link del proyecto"])
+- Ejecutar el comando de (npm install) para que se instalen las dependencias de la aplicacion.
+- Ejecutar el comando (npm start) que levantara la aplicacion en el puerto (localhost:4200).
