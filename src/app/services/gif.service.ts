@@ -32,10 +32,10 @@ export class GifsService {
   }
 
   public searchTag(tag: string): void {
-    //si el tag es una cadena vacia no se guarda en el arreglo
-    // if (tag.length === 0 ) {
-    //   return;
-    // }
+    //si el tag es una cadena vacia no se guarda en el arreglo y si es null no se mostrara ninguna lista
+    if (tag == null || tag.length === 0) {
+      return;
+    }
     this.organaizedHistory(tag);
     //?el objeto params nos ayuda a definir los parametros que requerimos
     const params = new HttpParams()
@@ -75,6 +75,8 @@ export class GifsService {
       return;
     }
     this._tagHistory = JSON.parse(localStorage.getItem('history')!);
+    if ( this._tagHistory.length === 0 ) return;
+    this.searchTag( this._tagHistory[0] );
   }
 
 }
