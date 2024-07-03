@@ -33,9 +33,9 @@ export class GifsService {
 
   public searchTag(tag: string): void {
     //si el tag es una cadena vacia no se guarda en el arreglo
-    if (tag.length === 0 ) {
-      return;
-    }
+    // if (tag.length === 0 ) {
+    //   return;
+    // }
     this.organaizedHistory(tag);
     //?el objeto params nos ayuda a definir los parametros que requerimos
     const params = new HttpParams()
