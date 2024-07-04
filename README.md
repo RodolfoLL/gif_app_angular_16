@@ -6,6 +6,8 @@ GifsApp es una aplicacion web sencilla que utiliza la api [Giphy](https://giphy.
 
 ![GifsApp image](/src/assets/gifApp.png)
 
+Puedes acceder a una demo de la aplicacion haciendo click en el siguiente enlace [GifsApp demo](https://rodolfoll.github.io/gif_app_angular_16/)
+
 ## Modulos y componentes de la aplicacion
 
 La aplicacion fue construida utilizando Angular en su version 16.0.0 la cual maneja lo que es el concepto de modulos y componentes.
