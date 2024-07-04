@@ -57,3 +57,13 @@ Para poder levantar la aplicacion solo debe seguir los siguientes pasos:
 - Realize una copia del proyecto utilizando el comando de (git clone ["link del proyecto"])
 - Ejecutar el comando de (npm install) para que se instalen las dependencias de la aplicacion.
 - Ejecutar el comando (npm start) que levantara la aplicacion en el puerto (localhost:4200).
+
+## Deploy de la aplicacion
+Para el deploy de la aplicacion utilize github pages, para hacer el build instale ciertas depencias de desarollo estas son:
+- [del-cli](https://www.npmjs.com/package/del-cli)
+-[copyfiles](https://www.npmjs.com/package/copyfiles)
+
+y configure un script para poder ejecutar los diferentes comandos:
+![GifsApp deploy](/src/assets/scriptBuild.png)
+
+el comando importante para el hacer el deploy en github pages es el : npm run build:github
